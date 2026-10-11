@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO */
+.hero {
+    height: 685px;
+    position: relative;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVIGATION */
+.navbar {
+    height: 70px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.navbar a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.logo span {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 5px;
+    letter-spacing: 3px;
+    margin-top: -2px;
+}
+
+.nav-right button,
+.main-button {
+    background: transparent;
+    color: #d0ad3d;
+    border: 1px solid #d0ad3d;
+    padding: 10px 18px;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: absolute;
+    left: 35px;
+    bottom: 67px;
+}
+
+.small-heading {
+    color: #d0ad3d;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 43px;
+    font-weight: normal;
+    line-height: 1.08;
+    margin-bottom: 17px;
+}
+
+.description {
+    color: #ddd;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 27px;
+}
+
+.main-button {
+    padding: 13px 23px;
+}
+
+/* COOKIE BAR */
+.cookie-bar {
+    height: 63px;
+    background: #101829;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.cookie-bar p {
+    color: #c9c9c9;
+    font-size: 9px;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.cookie-buttons button {
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+.decline {
+    background: transparent;
+    border: 1px solid #384258;
+    color: white;
+}
+
+.accept {
+    background: #c5a333;
+    border: 1px solid #c5a333;
+    color: white;
+}
+
+/* ROOMS */
+.rooms {
+    background: #050505;
+    padding: 12px 35px 40px;
+}
+
+.rooms h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.rooms-description {
+    color: #bdbdbd;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 31px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.card {
+    height: 425px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
